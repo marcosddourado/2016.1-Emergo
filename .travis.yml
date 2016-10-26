@@ -7,5 +7,8 @@ android:
     - build-tools-23.0.3
     - android-23
 
+before_install:
+ - chmod +x EmerGo/./gradlew
+
 script:
    - EmerGo/./gradlew build connectedCheck
