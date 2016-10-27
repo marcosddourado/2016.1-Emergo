@@ -8,7 +8,7 @@ android:
     - android-23
 
 before_script:
- - chmod +x EmerGo/./gradlew
+ - chmod +x ./gradlew
 
 script:
-   - EmerGo/./gradlew build connectedCheck
+   - ./gradlew build connectedCheck
