@@ -11,6 +11,10 @@ android:
     - extra-android-m2repository
     - addon-google_apis-google-23
 
+env:
+  global:
+    - GRADLE_OPTS="-Xms128m"
+
 before_script:
  - chmod +x ./gradlew
 
