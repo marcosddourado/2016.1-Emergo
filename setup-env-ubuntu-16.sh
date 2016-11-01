@@ -15,9 +15,6 @@ echo "export JAVA_HOME=\"/usr/lib/jvm/java-8-oracle\"" >> ~/.bashrc
 source ~/.bashrc
 echo "JAVA_HOME: $JAVA_HOME"
 
-echo "Cloning the repository"
-sudo apt-get install git
-git clone https://github.com/marcosddourado/2016.1-Emergo.git
 
 echo "Setting up android environment"
 cd 
@@ -28,7 +25,3 @@ wget https://dl.google.com/dl/android/studio/ide-zips/2.2.1.0/android-studio-ide
 sudo apt-get install unzip
 unzip android-studio-ide-145.3330264-linux.zip?hl=pt-br
 ./android-studio/bin/studio.sh
-
-
-
-
