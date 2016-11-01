@@ -15,7 +15,6 @@ echo "export JAVA_HOME=\"/usr/lib/jvm/java-8-oracle\"" >> ~/.bashrc
 source ~/.bashrc
 echo "JAVA_HOME: $JAVA_HOME"
 
-
 echo "Setting up android environment"
 cd 
 sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6
