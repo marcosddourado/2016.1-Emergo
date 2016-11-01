@@ -30,7 +30,9 @@ android {
     }
 
     dexOptions {
-        javaMaxHeapSize "4g"
+        incremental true
+        maxProcessCount 4
+        javaMaxHeapSize "5g"
     }
 }
 
@@ -95,20 +97,5 @@ task jacocoTestReportAndroidTest(type: JacocoReport, dependsOn: "connectedAndroi
     }
     else {
         executionData = files('build/outputs/code-coverage/connected/coverage.ec')
-    }
-}
-
-if (System.env.TRAVIS == 'true') {
-    // To limit the memory usage when running in Travis.
-    // Travis tend to kill tasks that use too much memory.
-    allprojects {
-        tasks.withType(GroovyCompile) {
-            groovyOptions.fork = false
-        }
-        tasks.withType(Test) {
-            // containers (currently) have 2 dedicated cores and 4GB of memory
-            maxParallelForks = 2
-            minHeapSize = '128m'
-        }
     }
 }
