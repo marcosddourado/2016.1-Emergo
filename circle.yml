@@ -1,6 +1,6 @@
 machine: 
   environment: 
-  ANDROID_HOME: /usr/local/android-sdk-linux 
+  PATH: "~/$CIRCLE_PROJECT_REPONAME/gradle-2.9/bin:$PATH"
   _JAVA_OPTIONS: "-Xms256m -Xmx1280m -XX:MaxPermSize=350m" 
   GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx1536m - XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError"'
 
