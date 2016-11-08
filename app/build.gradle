@@ -28,7 +28,9 @@ android {
         exclude 'META-INF/LICENSE-FIREBASE.txt'
         exclude 'META-INF/NOTICE'
     }
-
+    lintOptions {
+        abortOnError false
+    }
     dexOptions {
         incremental true
         maxProcessCount 4
