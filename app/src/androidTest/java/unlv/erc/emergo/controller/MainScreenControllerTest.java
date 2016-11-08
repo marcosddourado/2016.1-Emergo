@@ -26,11 +26,6 @@ public class MainScreenControllerTest extends ActivityInstrumentationTestCase2<M
         device = UiDevice.getInstance(getInstrumentation());
     }
 
-    public void testButtonGoClick(){
-        onView(withId(R.id.buttonGo)).check(matches(isDisplayed()));
-        onView(withId(R.id.buttonGo)).perform(click());
-    }
-
     public void testButtonOkayClick(){
         onView(withId(R.id.buttonOkay)).check(matches(isDisplayed()));
         onView(withId(R.id.buttonOkay)).perform(click());

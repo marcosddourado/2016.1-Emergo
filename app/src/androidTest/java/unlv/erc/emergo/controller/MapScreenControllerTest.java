@@ -24,16 +24,4 @@ public class MapScreenControllerTest extends ActivityInstrumentationTestCase2<Ma
         getActivity();
         device = UiDevice.getInstance(getInstrumentation());
     }
-
-    public void testSearchClick(){
-        onView(withId(R.id.iconSearch)).perform(click());
-    }
-
-    public void testMapClick(){
-        onView(withId(R.id.iconMap)).perform(click());
-    }
-
-    public void testConfigClick(){
-        onView(withId(R.id.iconMenu)).perform(click());
-    }
 }
