@@ -53,6 +53,11 @@ dependencies {
     androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.0'
 }
 
+apply plugin: 'checkstyle'
+checkstyle {
+    configFile rootProject.file('checkstyle.xml')
+    showViolations true
+}
 apply plugin: 'com.android.application'
 apply plugin: "jacoco"
 
