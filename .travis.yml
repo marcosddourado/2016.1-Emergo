@@ -19,6 +19,7 @@ android:
     - compile 'com.google.android.gms:play-services:8.4.0'
     - compile 'com.firebase:firebase-client-android:2.5.2'
 
+install: travis_wait 30 mvn install
 
 before_script:
   # Create and start emulator
