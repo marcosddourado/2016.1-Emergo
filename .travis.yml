@@ -9,8 +9,6 @@ env:
 
 android:
   components:
-    - platform-tools
-    - tools
     - build-tools-23.0.3
     - android-22
     - android-23
@@ -18,8 +16,6 @@ android:
     - extra-android-m2repository
     - compile 'com.google.android.gms:play-services:8.4.0'
     - compile 'com.firebase:firebase-client-android:2.5.2'
-
-install: travis_wait 30 mvn install
 
 before_script:
   # Create and start emulator
