@@ -4,8 +4,8 @@ sudo: require
 
 env:
   global:
-    # wait up to 10 minutes for adb to connect to emulator
-    - ADB_INSTALL_TIMEOUT=10
+    # wait up to 20 minutes for adb to connect to emulator
+    - ADB_INSTALL_TIMEOUT=20
 
 android:
   components:
