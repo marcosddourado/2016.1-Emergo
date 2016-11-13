@@ -25,7 +25,7 @@ before_script:
   - emulator -avd test -no-skin -no-audio -no-window &
   - travis_wait 20 chmod +x ./gradlew
   - android-wait-for-emulator
-  - adb shell input keyevent 82 &amp
+  - adb shell input keyevent 82 &
 
 
 
