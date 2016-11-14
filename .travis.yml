@@ -37,7 +37,6 @@ script:
   - adb install -r app/build/outputs/apk/app-debug.apk
   - adb install -r app/build/outputs/apk/app-debug-androidTest-unaligned.apk
   - ./gradlew check -PdisablePreDex --continue --stacktrace
-  - .buildscript/launchInstrumentationTests.sh
 
 after_success:
   - ./gradlew jacocoFullReport
