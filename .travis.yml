@@ -9,8 +9,9 @@ env:
 
 android:
   components:
-    - platform-tools		
     - tools
+    - tools
+    - platform-tools		
     - build-tools-23.0.3
     - android-22
     - android-23
